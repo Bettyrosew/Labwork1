@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password = trim($_POST["new_password"]);
     }
 
-    // Validate confirm password
+    // Validation of confirm password
     if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Please confirm the password.";
     } else{
